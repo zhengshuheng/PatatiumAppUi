@@ -1,7 +1,28 @@
 #PatatiumAppUi
 <h1>更新<h1>
   <h3>20161222增加对YAML管理对象库的支持</h3>
-   对象库编写支持YAML支持，格式如下：<img src="http://git.oschina.net/uploads/images/2016/1222/113850_54959e8c_482055.png"/>
+   对象库编写支持YAML支持，格式如下：
+```
+pages:
+    - page:
+       pageName: org.webdriver.patatiumappui.pageObject.StartPage
+       value: "www.baidu.com"
+       desc: "微信APP启动首页"
+       locators:
+          - {type: "id",timeout: "3",value: "com.tencent.mm:id/c72",desc: "登录",name: "登录"}
+          - {type: "id",timeout: "3",value: "com.tencent.mm:id/c71",desc: "注册",name: "注册"}
+    - page:
+        pageName: org.webdriver.patatiumappui.pageObject.LoginPage
+        value: ""
+        desc: "微信App登录页面"
+        locators:
+          - {type: "id",timeout: "3" , value: "com.tencent.mm:id/b9i", desc: "使用其他方式登录",name: "使用其他方式登录"}
+          - {type: "xpath",timeout: "3" ,value: "//android.widget.EditText[@text='QQ号/微信号/Email']", desc: "账号",name: "账号输入框"}
+          - {type: "xpath",timeout: "3" ,value: "//android.widget.EditText[@NAF='1']", desc: "密码",name: "密码输入框"}
+          - {type: "id",timeout: "3" ,value: "com.tencent.mm:id/b8z", desc: "登录",name: "登录按钮"}
+          - {type: "id",timeout: "3" ,value: "com.tencent.mm:id/bl3", desc: "失败提示信息确认信息",name: "登录失败提示信息"}
+          - {type: "id",timeout: "3" ,value: "com.tencent.mm:id/a_r", desc: "失败提示信息确认按钮",name: "登录失败确认按钮"}
+```
 编写完后运行PageObjectAutoCodeForYaml.java 类
 ![输入图片说明](http://git.oschina.net/uploads/images/2016/0903/210836_afcc8ce0_482055.png "在这里输入图片标题")
 <h1>简介</h1>
