@@ -1,0 +1,119 @@
+
+$(document).ready(function(){
+$("#failed_num").click(function(){
+ if($("#failed").css("display")=="none")
+ {
+    $(".passed_info").hide();
+    $(".failed_info").hide();
+    $(".full_info").hide();
+    $(".passed_info_div").hide();
+    $(".failed_info_div").hide();
+    $(".full_info_div").hide();
+ 	$("#passed").hide();
+    $("#total").hide();
+    $("#skiped").hide();
+    $("#failed").show();
+   
+ }
+else
+ {
+ 	$(".passed_info").hide();
+    $(".failed_info").hide();
+    $(".full_info").hide();
+    $(".passed_info_div").hide();
+    $(".failed_info_div").hide();
+    $(".full_info_div").hide();
+   $("#passed").hide();
+   $("#total").hide();
+   $("#skiped").hide();
+ }
+}
+); 
+
+$("#passed_num").click(function(){
+if($("#passed").css("display")=="none")
+ {  
+ 	$(".passed_info").hide();
+    $(".failed_info").hide();
+    $(".full_info").hide();
+    $(".passed_info_div").hide();
+    $(".failed_info_div").hide();
+    $(".full_info_div").hide();
+ 	$("#failed").hide();
+    $("#total").hide();
+    $("#skiped").hide();
+    $("#passed").show();
+}
+else
+{
+    $(".passed_info").hide();
+    $(".failed_info").hide();
+    $(".full_info").hide();
+    $(".passed_info_div").hide();
+    $(".failed_info_div").hide();
+    $(".full_info_div").hide();
+    $("#failed").hide();
+    $("#total").hide();
+    $("#skiped").hide();
+}
+}
+ );
+ 
+ $("#total_num").click(function(){
+if($("#total").css("display")=="none")
+{
+   $(".passed_info").hide();
+    $(".failed_info").hide();
+    $(".full_info").hide();
+    $(".passed_info_div").hide();
+    $(".failed_info_div").hide();
+    $(".full_info_div").hide();
+    $("#passed").hide();
+    $("#failed").hide();
+    $("#skiped").hide();
+    $("#total").show();
+}
+else
+{
+   $(".passed_info").hide();
+    $(".failed_info").hide();
+    $(".full_info").hide();
+    $(".passed_info_div").hide();
+    $(".failed_info_div").hide();
+    $(".full_info_div").hide();
+   $("#passed").hide();
+   $("#failed").hide();
+   $("#skiped").hide();
+   }
+}
+ );
+ 
+ $("#skiped_num").click(function(){
+if($("#skiped").css("display")=="none")
+{
+	$(".passed_info").hide();
+    $(".failed_info").hide();
+    $(".full_info").hide();
+    $(".passed_info_div").hide();
+    $(".failed_info_div").hide();
+    $(".full_info_div").hide();
+    $("#skiped").show();
+    $("#total").hide();
+    $("#passed").hide();
+    $("#failed").hide();
+}
+else
+{
+   $(".passed_info").hide();
+    $(".failed_info").hide();
+    $(".full_info").hide();
+    $(".passed_info_div").hide();
+    $(".failed_info_div").hide();
+    $(".full_info_div").hide();
+$("#total").hide();
+$("#passed").hide();
+$("#failed").hide()
+}
+});
+}
+);

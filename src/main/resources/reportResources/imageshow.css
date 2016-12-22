@@ -1,0 +1,42 @@
+.thumbholder {width:600px; margin:0 auto;}
+a.clickbox, a.clickbox:visited, a.clickbox:hover {text-decoration:none;}
+a.clickbox img {display:block; border:0;}
+
+a.clickbox b {display:block;}
+
+a.clickbox { margin:0 15px 15px 0; display:inline;}
+
+a.clickbox .lightbox {position:absolute; left:-9999px; top:0; cursor:default; z-index:500;}
+
+a.clickbox .light {position:absolute; left:0; top:0; width:100%;}
+a.clickbox .box {position:absolute; left:0; width:100%; text-align:center; height:300px; top:40%; margin-top:-150px;}
+/* trigger for IE6 */
+a.clickbox:active {direction:ltr;}
+
+a.clickbox:active .lightbox {left:0; width:100%; height:100%;}
+a.clickbox .lightbox:hover,
+a.clickbox:focus .lightbox {position:fixed; left:0; width:100%; height:100%;}
+
+a.clickbox .lightbox:hover .light,
+a.clickbox:active .lightbox .light,
+a.clickbox:focus .lightbox .light {background:#000; width:100%; height:100%; filter: alpha(opacity=75);
+ filter: progid:DXImageTransform.Microsoft.Alpha(opacity=75); opacity:0.75;
+}
+
+a.clickbox .lightbox:hover .box img,
+a.clickbox:active .lightbox .box img,
+a.clickbox:focus .lightbox .box img {border:2px solid #000; margin:0 auto; padding:30px; background:#fff;}
+
+a.clickbox .lightbox:hover .box span,
+a.clickbox:active .lightbox .box span,
+a.clickbox:focus .lightbox .box span {display:block; font:normal 11px/18px verdana, sans-serif; width:400px; padding:0; margin:10px auto; text-align:center; text-decoration:none; color:#ddd;}
+
+.clear {clear:left;}
+
+a.clickbox i {display:block; width:16px; height:16px; position:fixed; right:-100px; top:0; z-index:500;}
+
+a.clickbox .lightbox:hover i,
+a.clickbox:active i,
+a.clickbox:focus i {right:10px; top:10px; background:url(close.gif);}
+
+#close {display:block; position:fixed; width:16px; height:16px; right:10px; top:10px; z-index:1000; background:url(trans.gif); cursor:pointer;}

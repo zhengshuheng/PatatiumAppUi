@@ -1,0 +1,268 @@
+table
+{
+width:100%;
+text-align:left;
+border-collapse:collapse;
+border-spacing:0;
+}
+ td
+{
+border:1.5px;
+border-color:gray;
+border-bottom-style:solid;
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+text-align:left;
+word-break:break-all;
+height:20px;
+}
+tr
+{
+	padding:0px;
+}
+body
+{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	background-image:url(back.gif);
+	
+}
+canvas
+{
+	
+}
+#canvas_div
+{
+	text-align:center;
+	width:320px
+}
+#footer
+{
+	font-size:14px;
+	margin-left:730px;
+	text-align:left;
+	color:gray;
+	margin-top:10px;
+}
+#logo
+{
+	text-align:left;
+	float:left;
+	width:250px
+}
+#title
+{
+	font-size:23px;
+	font-weight:bold;
+	width:320px;
+}
+#time
+{
+	text-align:left;
+	margin-left:20px;
+	float:left;
+}
+#time div
+{
+	margin-top:3px;
+	font-size:12px;
+} 
+#total
+{
+    width:100%;
+	border:1px;
+	color:green;
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 14px;
+}
+#total td
+{
+   margin-left:0px;
+   padding:0px;
+   font-size: 14px;
+}
+#passed
+{
+    width:100%;
+	border:1px;
+	color:green;
+	display:none;
+	font-size: 14px;
+}
+#failed
+{
+    width:100%;
+	border:1px;
+	color:red;
+	display:none;
+	font-size: 14px;
+}
+#skiped
+{
+    width:100%;
+	border:1px;
+	color:red;
+	display:none;
+	font-size: 14px;
+}
+#report_total
+{
+border:none;
+}
+#failed_num
+{
+background-color:red;
+border:none;
+color:white;
+}
+#passed_num
+{
+background-color:green;
+border:none;
+color:white;
+}
+#total_num
+{
+background-color:green;
+border:none;
+color:white;
+
+}
+#skiped_num
+{
+background-color:radius;
+border:none;
+color:white;
+}
+#countresult_table
+{
+   width:100%; 
+   border:1px;
+}
+#header_right
+{
+	width:300px;
+	text-align:center;
+	margin-top:0px;
+	float:left;
+}
+#report_title
+{
+	float:left;
+	width:480px;
+}
+.SEQ
+{
+  width: 3%;
+  text-align: center;
+}
+.case_name_td
+{
+	width:25%;
+}
+.case_result_td
+{
+	width:3%;
+	text-align:center;
+	border-right-color:white;
+	border-right:0px;
+	
+}
+.case_result_info_td
+{
+	width:36%;
+	border-left-color:white;
+	border-left-style:none;
+}
+.case_result_beizhu_td
+{
+	width:24%;
+}
+.case_time_td
+{
+	width:10%;
+}
+.total
+{
+float:left;
+margin-left:20px;
+margin-top:0px;
+}
+.passed_button
+{
+width: 20px;
++height: 20px;
+background: green;
+-moz-border-radius: 10x;
+-webkit-border-radius: 10px;
+ border-radius: 10px;
+border:none;
+padding:0px;
+border-bottom-color:white;
+border-right-color:white;
+color:white;
+}
+.failed_button
+{
+width: 20px;
++height: 20px;
+background: red;
+-moz-border-radius: 10x;
+-webkit-border-radius: 10px;
+ border-radius: 10px;
+border:none;
+padding:0px;
+color:white;
+}
+.full_info 
+{
+	display: table-cell;
+	border-style: none;
+	color:black;
+	font-weight:bold;
+}
+.passed_info
+{
+	display: table-cell;
+	border-style: none;
+	color:black;
+	font-weight:bold;
+}
+.failed_info
+{
+	border-style: none;
+	color:black;
+	font-weight:bold;
+}
+
+.full_info_div
+{
+	border-style: none;
+}
+.passed_info_div
+{
+	border-style: none;
+}
+.failed_info_div
+{
+	border-style: none;
+}
+.failed_info_li
+{
+   color:red;
+}
+.passed_info_li
+{
+   color:green;
+}
+.err_span
+{
+	color: red;
+}
+.pass_span
+{
+	color: green;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--整个对象库文件的根目录，管理整个项目的对象-->
+<map>
+    <!--管理一个页面的元素（webelement：input,select,textare,a,li等标签），一个page包含多个locator对象
+    Pagename:page对象名字，格式：org.webdriver.patatiumappui.pageObject.xxxPage;最后面那位才是真正的页面名字，前面的是java对象库路径；
+    另外注意，页面名字是头个单词大写；例如主页：名字定义为 org.webdriver.patatiumappui.pageObject.HomePage
+    Value：页面对象的URL，可不填。
+    Desc:页面对象中文描述-->
+    <page pagename="org.webdriver.patatiumappui.pageObject.StartPage" value="" desc="微信APP启动首页">
+        <!--管理一个页面的元素（webelement：input,select,textare,a,li等标签），一个page包含多个locator对象
+        Type：定位方式，包含id,name,class,linktext,xpath,css等，定位元素的时候灵活使用，一般可以统一用xpath
+        代替id,name,class，linktext的定位方式。
+        Timeout：元素加载时间，有些页面元素，可能要等待一段时间才能加载过来，为了查找元素的稳定性，需加等待时间。
+        Value:元素定位信息，如果是id,name,class，linktext直接把网页元素对应的这些属性值写上即可，如果是xpath定位方式，
+        需要填写正确的xpath语法格式。
+        Desc:元素的描述，元素的中文描述信息-->
+		<locator type="id" timeout="3" value="com.tencent.mm:id/c4k"  desc="登录">登录</locator>
+		<locator type="id" timeout="3" value="com.tencent.mm:id/cuh"  desc="注册">注册</locator>
+	</page>
+	<page pagename="org.webdriver.patatiumappui.pageObject.LoginPage" value="" desc="微信App登录页面">
+	   <locator type="id" timeout="3" value="com.tencent.mm:id/b6c"  desc="使用其他方式登录">使用其他方式登录</locator>
+		<locator type="id" timeout="3" value="com.tencent.mm:id/b5r"  desc="账号">账号输入框</locator>
+		<locator type="id" timeout="3" value="com.tencent.mm:id/b5s"  desc="密码">密码输入框</locator>
+		<locator type="id" timeout="3" value="com.tencent.mm:id/b5t"  desc="登录">登录按钮</locator>
+		<locator type="id" timeout="3" value="com.tencent.mm:id/avt"  desc="失败提示信息确认按钮">登录失败提示信息</locator>
+		<locator type="id" timeout="3" value="com.tencent.mm:id/bim"  desc="失败提示信息确认按钮">登录失败确认按钮</locator>
+
+    </page>
+</map>
