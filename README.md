@@ -1,37 +1,14 @@
 #PatatiumAppUi
-<h1>更新<h1>
-  <h3>20161222增加对YAML管理对象库的支持</h3>
-   对象库编写支持YAML支持，格式如下：
-```
-pages:
-    - page:
-       pageName: org.webdriver.patatiumappui.pageObject.StartPage
-       value: "www.baidu.com"
-       desc: "微信APP启动首页"
-       locators:
-          - {type: "id",timeout: "3",value: "com.tencent.mm:id/c72",desc: "登录",name: "登录"}
-          - {type: "id",timeout: "3",value: "com.tencent.mm:id/c71",desc: "注册",name: "注册"}
-    - page:
-        pageName: org.webdriver.patatiumappui.pageObject.LoginPage
-        value: ""
-        desc: "微信App登录页面"
-        locators:
-          - {type: "id",timeout: "3" , value: "com.tencent.mm:id/b9i", desc: "使用其他方式登录",name: "使用其他方式登录"}
-          - {type: "xpath",timeout: "3" ,value: "//android.widget.EditText[@text='QQ号/微信号/Email']", desc: "账号",name: "账号输入框"}
-          - {type: "xpath",timeout: "3" ,value: "//android.widget.EditText[@NAF='1']", desc: "密码",name: "密码输入框"}
-          - {type: "id",timeout: "3" ,value: "com.tencent.mm:id/b8z", desc: "登录",name: "登录按钮"}
-          - {type: "id",timeout: "3" ,value: "com.tencent.mm:id/bl3", desc: "失败提示信息确认信息",name: "登录失败提示信息"}
-          - {type: "id",timeout: "3" ,value: "com.tencent.mm:id/a_r", desc: "失败提示信息确认按钮",name: "登录失败确认按钮"}
-```
-编写完后运行PageObjectAutoCodeForYaml.java 类
-<h1>简介</h1>
-这是一个AppUi自动化测试框架，由webdriver中文社区创办人土豆(本人技术笔名)所创建,该APP自动化测试框架是用java语言编写的，基于selenium webdriver Appium的开源自动化测试框架，该框架结合了testng,selenium,webdriver，Appium,jxl，jodd-http 等工具。该框架基于页面对象模型（POM）架构，实现了关键字驱动技术，数据驱动,无需掌握多少编程知识即可编写脚本，同时实现了数据与代码分离的功能：1、元素定位信息保存在对象库文件中 2、测试用例数据可以存储在excel中。从而实现，页面元素位置变化，无需改动脚本，只需修改对应的元素定位信息即可。
+### 简介
+
+这是一个AppUi自动化测试框架，由[webdriver中文社区](http://www.webdriver.org)创办人土豆(本人技术笔名)所创建,该APP自动化测试框架是用java语言编写的，基于selenium webdriver Appium的开源自动化测试框架，该框架结合了testng,selenium,webdriver，Appium,jxl，jodd-http 等工具。该框架基于页面对象模型（POM）架构，实现了关键字驱动技术，数据驱动,无需掌握多少编程知识即可编写脚本，同时实现了数据与代码分离的功能：1、元素定位信息保存在对象库文件中 2、测试用例数据可以存储在excel中。从而实现，页面元素位置变化，无需改动脚本，只需修改对应的元素定位信息即可。
 该框架实现了检查点及用例失败自动截图功能，自动生成html测试报告及自动发送html邮件测试报告功能。
 目前框架还不是特别完善，还需要写一些脚本实现自动化；学习该框架需要熟悉一定的安卓APP 和java基础，后续可以考虑自动编码的实现
-<h1>主要功能</h1>
+### 主要功能
+
 1、实现关键字驱动技术，编写用例简单
 2、实现数据驱动技术，减少用例代码
-3、支持元素对象库管理，页面元素信息与代码分离
+3、支持元素对象库管理，页面元素信息与代码分离,支持XML,YAML管理对象库
 3、支持检查点、用例断言设置
 4、检查点失败截图，一个检查点失败不影响用例后续执行
 5、用例失败自动截图
@@ -40,20 +17,25 @@ pages:
 8、支持APP控件常用操作
 9、用例集执行完毕自动生成简介美观的html报告
 10、用例执行完毕自动发送详实的html邮件报告，可拓展为有失败用例才发送。
-<h1>Api文档</h1>
+### Api文档
+
 <a href="http://www.webdriver.org/doc/patatiumappui/api/index.html" target="_blank">点击查看api文档</a>
-<h1>环境配置</h1>
+### 环境配置
+
 1、JDK1.8
 2、IDEA\Eclipse
 3、Android SDK 具体安装参考：<a href="http://www.webdriver.org/article-52-1.html" target="_blank">http://www.webdriver.org/article-52-1.html</a>
 4、Maven
 5、一台安卓手机或者安卓模拟器，推荐夜神安卓模拟器，下载地址：<a href="http://www.yeshen.com/" target="_blank">http://www.yeshen.com/</a>
 6、Appium Server端，下载地址：<a href="http://pan.baidu.com/s/1jIxzSfO" target="_blank">http://pan.baidu.com/s/1jIxzSfO</a>
-<h1>注意事项</h1>
+### 注意事项
+
 工程项目编码需要设置成UTF-8否则会出现中文乱码情况
-<h1>Demo演示</h1>
+### Demo演示
+
 Demo演示视频地址：<a href="http://v.youku.com/v_show/id_XMTcxMTY1MzE0NA==.html?beta&" target="_blank">http://v.youku.com/v_show/id_XMTcxMTY1MzE0NA==.html?beta&</a>
-<h3>一、创建对象库</h3>
+### 一、创建对象库
+
 1、通过Android SDK工具 uiautomatorviewer.bat 获取app元素定位信息，具体使用参考：<a href="http://www.webdriver.org/article-53-1.html" target="_blank">http://www.webdriver.org/article-53-1.html</a>
 2、UILibrary.xml 对象库文件编写
 ```
@@ -87,7 +69,8 @@ Demo演示视频地址：<a href="http://v.youku.com/v_show/id_XMTcxMTY1MzE0NA==
 </map>
 ```
 编写完后，运行/src/main/java/org/webdriver/patatiumappui/PageObjectConfig/PageObjectAutoCode.java 文件生成对象库java代码
-<h3>二、公共action封装实例（业务操作）</h3>
+### 二、公共action封装实例（业务操作）
+
 ```
 /**
  * Created by zhengshuheng on 2016/9/2 0002.
@@ -108,10 +91,12 @@ public class LoginAction extends TestBaseCase {
 }
 
 ```
-<h3>三、驱动数据来源实例</h3>
+### 三、驱动数据来源实例
+
 在src/main/resources/data下创建loginData.xls文件
 ![输入图片说明](http://git.oschina.net/uploads/images/2016/0903/210055_8e091e1d_482055.png "在这里输入图片标题")
-<h3>四、测试用例编写</h3>
+### 四、测试用例编写
+
 ```
 /**
  * Created by zhengshuheng on 2016/9/2 0002.
@@ -161,7 +146,8 @@ public class LoginTest extends TestBaseCase {
 }
 
 ```
-<h3>五、Testng.xml配置</h3>
+### 五、Testng.xml配置
+
 tesng.xml需配置app主包名，主类名，SDK版本，Device Name等信息
 Device Name：在cmd命令下通过adb devices 获取
 ![输入图片说明](http://git.oschina.net/uploads/images/2016/0903/210836_afcc8ce0_482055.png "在这里输入图片标题")
@@ -216,11 +202,13 @@ App安装包apk文件放在项目根目录下apps目录里，tesng.xml需指定�
     </test>
 </suite> <!-- Suite -->
 ```
-<h3>六、执行用例</h3>
+### 六、执行用例
+
 IDE：在IDE集成开发环境下右键testng.xml使用testng运行
 Maven:执行mvn clean ;mvn test 命令
 Jenkins：1、checkout 项目代码 2、指定pom.xml文件 3、执行mvn clean ;mvn test 命令
-<h3>七、查看测试报告及日志文件</h3>
+### 七、查看测试报告及日志文件
+
 用例执行完毕，会自动发送邮件报告及生成测试报告文件；用例失败会自动截图并将其展示在报告中，也可以将用例失败堆栈信息显示到报表中
 测试报告文件生成在项目根目录下test-out目录下report.html文件
 报告展示如下：<a href="http://www.webdriver.org/doc/patatiumappui/report/report.html" target="_blank">点击查看在线报告</a>
@@ -229,8 +217,36 @@ Jenkins：1、checkout 项目代码 2、指定pom.xml文件 3、执行mvn clean 
 ![输入图片说明](http://git.oschina.net/uploads/images/2016/0903/212830_2ff8aa61_482055.png "在这里输入图片标题")
 测试邮件展示如下：
 ![输入图片说明](http://git.oschina.net/uploads/images/2016/0903/213029_66ca45e5_482055.png "在这里输入图片标题")
-#License
+### License
+
 GPL V2.0
-<h2>如果您觉得这个产品对您有用，您可以捐助下我，让我有理由继续下去，非常感谢。</h2>
+### 更新
+
+20161222增加对YAML管理对象库的支持
+   对象库编写支持YAML支持，格式如下：
+```
+pages:
+    - page:
+       pageName: org.webdriver.patatiumappui.pageObject.StartPage
+       value: "www.baidu.com"
+       desc: "微信APP启动首页"
+       locators:
+          - {type: "id",timeout: "3",value: "com.tencent.mm:id/c72",desc: "登录",name: "登录"}
+          - {type: "id",timeout: "3",value: "com.tencent.mm:id/c71",desc: "注册",name: "注册"}
+    - page:
+        pageName: org.webdriver.patatiumappui.pageObject.LoginPage
+        value: ""
+        desc: "微信App登录页面"
+        locators:
+          - {type: "id",timeout: "3" , value: "com.tencent.mm:id/b9i", desc: "使用其他方式登录",name: "使用其他方式登录"}
+          - {type: "xpath",timeout: "3" ,value: "//android.widget.EditText[@text='QQ号/微信号/Email']", desc: "账号",name: "账号输入框"}
+          - {type: "xpath",timeout: "3" ,value: "//android.widget.EditText[@NAF='1']", desc: "密码",name: "密码输入框"}
+          - {type: "id",timeout: "3" ,value: "com.tencent.mm:id/b8z", desc: "登录",name: "登录按钮"}
+          - {type: "id",timeout: "3" ,value: "com.tencent.mm:id/bl3", desc: "失败提示信息确认信息",name: "登录失败提示信息"}
+          - {type: "id",timeout: "3" ,value: "com.tencent.mm:id/a_r", desc: "失败提示信息确认按钮",name: "登录失败确认按钮"}
+```
+编写完后运行PageObjectAutoCodeForYaml.java 类
+### 如果您觉得这个产品对您有用，您可以捐助下我，让我有理由继续下去，非常感谢。
+
 ![输入图片说明](http://git.oschina.net/uploads/images/2016/0829/144253_111773ec_482055.jpeg "在这里输入图片标题")
-<h2>您可以加我个人QQ:609958331，,也可以加入webdriver中文社区交流QQ群： 471137382，欢迎给我提建议和bug。 或者给我邮件：609958331@qq.com 现在微信捐助无法得知捐助人昵称，欢迎添加我的个人微信:zhengshuheng002</h2>
+### 您可以加我个人QQ:609958331，,也可以加入webdriver中文社区交流QQ群： 471137382，欢迎给我提建议和bug。 或者给我邮件：609958331@qq.com 现在微信捐助无法得知捐助人昵称，欢迎添加我的个人微信:zhengshuheng002
